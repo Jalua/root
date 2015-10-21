@@ -58,13 +58,13 @@ MORNING =
 MIDDAY =
     id: "midday"
     name: [[Midday]]
-    image: "misc/time-schedules/tod-schedule-24hrs.png~CROP(0,39,125,39)"
+    image: "misc/time-schedules/tod-schedule-24hrs~CROP(0,39,125,39)"
     lawful_bonus: 25
    
 AFTERNOON =
     id: "afternoon"
-    name: [["Afternoon"]]
-    image: "misc/time-schedules/default/schedule-afternoon.png"
+    name: [[Afternoon]]
+    image: "misc/time-schedules/default/schedule-afternoon"
     lawful_bonus: 25
 
 DUSK =
@@ -77,8 +77,8 @@ DUSK =
 
 FIRST_WATCH =
     id: "first_watch"
-    name: [["First Watch"]]
-    image: "misc/time-schedules/default/schedule-firstwatch.png"
+    name: [[First Watch]]
+    image: "misc/time-schedules/default/schedule-firstwatch"
     lawful_bonus: -25
     red: -45
     green: -35
@@ -86,8 +86,8 @@ FIRST_WATCH =
 
 SECOND_WATCH =
     id: "second_watch"
-    name: [["Second Watch"]]
-    image: "misc/time-schedules/default/schedule-secondwatch.png"
+    name: [[Second Watch]]
+    image: "misc/time-schedules/default/schedule-secondwatch"
     lawful_bonus: -25
     red: -45
     green: -35
@@ -105,9 +105,6 @@ DEFAULT_SCHEDULE = {
 QUANTITY = (easy, medium, hard) ->
     return medium
     
-----
--- 
--- 
 scenario
     id: "01_Defend_the_Forest"
     name: [[Defend the Forest]]
@@ -157,12 +154,7 @@ scenario
         unit: NAMED_LOYAL_UNIT 1, "Elvish Rider",
             15, 18,
             "Lomarfel", [[Lomarfel]]
-
-        -- unit: update
-        --           NAMED_LOYAL_UNIT
-        --               1, "Elvish Rider"
-        --               15, 18
-        --               "Lomarfel", [[Lomarfel]]
+        --- @TODO find a way to attack them
         --           {
         --               facing: "ne"
         --               profile: "portraits/lomarfel.png"

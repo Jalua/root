@@ -3,10 +3,9 @@ wml_config {
   name: "root"
   scope: "WesMods"
   on_scan: (cfg, file, path) ->
-    state.WesMods.roots[cfg.id] = cfg
     state.WesMods[cfg.id] =
-      loaded: false
+      loaded: true
       path: path
-  on_load: (cfg, file, path) ->
-    --state.WesMods[cfg.id].loaded = true
-} 
+      type: "root"
+  on_load: ->
+}
