@@ -1,4 +1,5 @@
 map {
+  id: "test_map"
   map_data: [[
 Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo
 Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo Wo
