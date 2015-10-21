@@ -1,3 +1,6 @@
+# Emacs tmp files
+*~
+    
 # Compiled Lua sources
 luac.out
 
